@@ -1,10 +1,10 @@
-# 🚀 Deep Q-Network (DQN) — Lunar Lander
+# Deep Q-Network (DQN) — Lunar Lander
 
 A deep reinforcement learning project that trains an agent to autonomously land a spacecraft using a **Deep Q-Network (DQN)** built from scratch in PyTorch. The agent learns to navigate the `LunarLander-v3` Gymnasium environment, targeting the official solve threshold of **+200 cumulative reward**.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 | | |
 |---|---|
@@ -16,7 +16,7 @@ A deep reinforcement learning project that trains an agent to autonomously land 
 
 ---
 
-## 🧠 Architecture
+## Architecture
 
 ### State Space (8-dimensional input)
 | Index | Feature |
@@ -45,7 +45,7 @@ Input (8) → Linear → ReLU → Linear(128) → ReLU → Linear(128) → Outpu
 
 ---
 
-## 🏆 Reward Structure
+## Reward Structure
 
 | Event | Reward |
 |---|---|
@@ -59,7 +59,7 @@ Input (8) → Linear → ReLU → Linear(128) → ReLU → Linear(128) → Outpu
 
 ---
 
-## 🔧 Training Details
+## Training Details
 
 ### Key Components
 
@@ -95,13 +95,13 @@ Loss            : MSE
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 After training, the agent runs **2 evaluation episodes** in `render_mode="human"` using pure exploitation (ε = 0, no randomness) to visually demonstrate the learned landing policy.
 
 ---
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
 ```bash
 # Clone the repo
@@ -118,7 +118,7 @@ jupyter notebook RL_Lunar_Landing.ipynb
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 dqn-lunar-lander/
@@ -129,7 +129,7 @@ dqn-lunar-lander/
 
 ---
 
-## 🔍 Key Takeaways
+## Key Takeaways
 
 - Experience replay and a frozen target network are critical for stable DQN training — without them, Q-value estimates diverge
 - The ε-decay rate directly controls the explore/exploit tradeoff; too fast leads to premature convergence, too slow leads to erratic behavior even late in training
